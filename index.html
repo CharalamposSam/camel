@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Camel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="bodyPreLoader()">
+    <div id="preloader"></div>
+    <div class="ksisto">
+         <div class="gameTitle">
+            <img src="images/gameTitle.png" alt="CAMEL" class="gameTitleImg">
+            <div class="button1">
+                <span>
+                    Αποκάλυψε
+                    <br>
+                    το κρυφό μήνυμα!
+                    <img src="images/arrow1.png" alt="arrow">
+                </span>
+                <button>Αποκάλυψε το<br>επόμενο μήνυμα<img src="images/arrow1.png"></button>
+                <a href="/tips/code" target="_parent">
+                    <button class="lastButton">
+                        Τα μηνύματα αποκαλύφθηκαν!<br>
+                        <span>Μάθε αν κερδισες μοναδικά δώρα<br>
+                        με τα Camel σου!</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <section class="section1">
+            <div class="section-container">
+                <img src="images/bg1.jpg" alt="CAMEL">
+                <div class="container" id="js-container">
+                    <canvas class="canvas" id="js-canvas" width="796" height="279"></canvas>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="section-container">
+                <img src="images/bg2.jpg" alt="CAMEL">
+                <div class="container" id="js-container2">
+                    <canvas class="canvas" id="js-canvas2" width="796" height="279"></canvas>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="section-container">
+                <img src="images/bg3.jpg" alt="CAMEL">
+                <div class="container" id="js-container3">
+                    <canvas class="canvas" id="js-canvas3" width="796" height="279"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        //Pre-loader
+        function bodyPreLoader() {
+                setTimeout( () => {
+                    document.getElementById( 'preloader' ).style.display = 'none'
+                },1000)
+        }
+        
+        // Analytics
+        function trackMe( complete ) {
+             
+             //alert( `scratch_${complete}_completed.` )
+        }
+
+    </script>
+    <script src="js/app.js"></script>
+    <script src="js/app2.js"></script>
+    <script src="js/app3.js"></script>
+</body>
+</html>
